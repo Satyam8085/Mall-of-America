@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mall of America</title>
+    <meta
+      name="description"
+      content="Interactive screening-round sales deck concept for Mall of America, built as a premium browser experience."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,700;6..96,800&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="noise"></div>
+    <header class="topbar">
+      <div>
+        <h1 id="property-name">Mall of America</h1>
+      </div>
+      <div class="topbar-actions">
+        <a href="#paths">Commercial Paths</a>
+        <a href="#sources" class="ghost-link">Sources</a>
+      </div>
+    </header>
+
+    <aside class="side-nav" id="side-nav" aria-label="Section Navigation"></aside>
+
+    <main class="page">
+      <section class="hero" id="overview" data-label="Overview">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Interactive Sales Deck</p>
+          <p class="location" id="property-location">Bloomington, Minnesota</p>
+          <h2 id="hero-title"></h2>
+          <p class="hero-intro" id="hero-intro"></p>
+          <p class="hero-position" id="hero-position"></p>
+          <div class="hero-cta-row">
+            <a href="#why-moa">See the story</a>
+            <a href="#closing" class="ghost-link">Jump to CTA</a>
+          </div>
+        </div>
+
+        <div class="hero-stage reveal">
+          <div class="hero-glow hero-glow-a"></div>
+          <div class="hero-glow hero-glow-b"></div>
+          <div class="hero-card">
+            <div class="hero-card-header">
+              <span>Audience Paths</span>
+              <span>Non-linear pitch flow</span>
+            </div>
+            <div class="audience-buttons" id="audience-buttons">
+              <button type="button" data-audience="leasing" class="is-active">Retail</button>
+              <button type="button" data-audience="sponsorship">Sponsors</button>
+              <button type="button" data-audience="events">Events</button>
+            </div>
+            <div class="audience-panel" id="audience-panel"></div>
+          </div>
+        </div>
+
+        <div class="metrics-grid" id="hero-metrics"></div>
+      </section>
+
+      <section class="section" id="why-moa" data-label="Why MOA">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Phase 1 / Core Overview</p>
+          <h2>The destination story is bigger than retail square footage.</h2>
+          <p>
+            This concept follows the brief's core beats with a cinematic, high-confidence narrative:
+            scale, differentiation, entertainment, dining, event capability, and a business-action close.
+          </p>
+        </div>
+        <div class="proof-grid" id="proof-grid"></div>
+      </section>
+
+      <section class="section" id="destinations" data-label="Experience">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Story Layers</p>
+          <h2>Retail, dining, attractions, and events operate as one commercial ecosystem.</h2>
+          <p>
+            Instead of marching through slides, the experience lets a viewer understand the property
+            through business-relevant layers they can scan in any order.
+          </p>
+        </div>
+        <div class="destination-grid" id="destination-grid"></div>
+      </section>
+
+      <section class="section event-platform" id="event-platform" data-label="Events Platform">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Venue &amp; Platform</p>
+          <h2 id="event-platform-title"></h2>
+          <p id="event-platform-copy"></p>
+        </div>
+        <div class="timeline-grid" id="timeline-grid"></div>
+        <div class="venue-shell reveal">
+          <p class="mini-heading">Event-ready proof points</p>
+          <ul class="compact-list" id="venue-stats"></ul>
+        </div>
+      </section>
+
+      <section class="section" id="paths" data-label="Commercial Paths">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Phase 2 / Expandable Architecture</p>
+          <h2>Three sales conversations. One modular system.</h2>
+          <p>
+            The brief asks for architecture that can expand into deeper sub-modules. This section shows
+            how the same experience can fork into tailored stories for leasing, sponsorship, and event
+            hosting without losing visual cohesion.
+          </p>
+        </div>
+        <div class="tab-row reveal" id="opportunity-tabs">
+          <button type="button" data-path="leasing" class="is-active">Leasing</button>
+          <button type="button" data-path="sponsorship">Sponsorship</button>
+          <button type="button" data-path="events">Event Hosting</button>
+        </div>
+        <div id="opportunity-body"></div>
+      </section>
+
+      <section class="section" id="modules" data-label="Modules">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Expandable System</p>
+          <h2>Designed to grow into a fuller digideck, not collapse into a one-off demo.</h2>
+          <p>
+            Each module can become a deeper click-through layer for a real leasing team, sponsorship
+            seller, or event producer.
+          </p>
+        </div>
+        <div class="module-grid" id="module-grid"></div>
+      </section>
+
+      <section class="section closing" id="closing" data-label="Action">
+        <div class="closing-panel reveal">
+          <p class="eyebrow">Bottom Line</p>
+          <h2>The property sells best when it feels impossible to ignore.</h2>
+          <p>
+            This concept turns the assignment into a fast, premium browser experience that can support a
+            live sales call today and deeper sub-modules tomorrow.
+          </p>
+          <div class="hero-cta-row">
+            <a href="mailto:info@mallofamerica.com">Request a follow-up conversation</a>
+            <a href="#sources" class="ghost-link">Review source trail</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section sources" id="sources" data-label="Sources">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Public Inputs</p>
+          <h2>Official references used for this concept.</h2>
+          <p>
+            Facts and positioning are grounded in publicly available Mall of America pages and official
+            press materials so the deck stays defensible in a screening context.
+          </p>
+        </div>
+        <ul class="source-list reveal" id="source-list"></ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; <span id="current-year"></span> Interactive deck prototype.</p>
+    </footer>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
